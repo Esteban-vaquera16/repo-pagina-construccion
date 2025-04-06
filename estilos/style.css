@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* MI PALETA DE COLORES */
+/* GRIS   #45474B */
+/* AMARILLO   #F4CE14 */
+/* BLANCO   #F5F7F8 */  
+
+body{
+    background-color: #BFBBA9;
+    font-family:"Roboto", sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*ESTILOS PARA EL HEADEER*/
+header {
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    background-color: #F4CE14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#img-logo {
+    width: 1fr;
+    height: 95%;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+
+#lista-busqueda {
+   display: flex;
+}
+.barra-busqueda a:hover{
+    color: #333;
+    opacity: 0.7;
+}
+.barra-busqueda {
+    list-style: none;
+    transition: opacity 0.3s ease;
+}
+
+.barra-busqueda a {
+    color:#F5F7F8  ;
+    text-decoration: none;
+    padding: 15px;
+    font-family:"Roboto", sans-serif ;    
+}
+/*Estilos para el Main*/
+main{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding-top: 120px;
+}
+.fondo-titulo{
+    background-image: url(/herramientas/excavadoras-tractores.webp);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.contenedor-main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.contenedor-main p{
+    color: #F5F7F8;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.seccion-img1{
+    width: 90%;
+    height: 370px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.seccion-img2{
+    width: 90%;
+    height: 370px;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.div-imagen1{
+    height: 90%;
+    width: 35%;
+    background-color:#F4CE14;
+    color: #45474B;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+.div-imagen2{
+    height: 90%;
+    width: 35%;
+    background-color:#F4CE14;
+    color: #45474B;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+.div-imagen3{
+    height: 90%;
+    width: 35%;
+    background-color:#F4CE14;
+    color: #45474B;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+.seccion-img1 img{
+    width: 90%;
+    height: 50%;
+    border-radius: 10%;
+}
+.seccion-img2 img{
+    width: 90%;
+    height: 50%;
+    border-radius: 10%;
+}
+#div-ubicacion{
+    width:35% ;
+    height:90%;
+    background-color: #F4CE14;
+    color: #45474B;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10%;
+    text-align: center;
+}
+#div-ubicacion iframe {
+    width: 90%;
+    height: 70%;
+    border-radius: 10%;
+    overflow: hidden; 
+}
+
+/*Estilos para el Foter*/
+footer{
+    width: 100%;
+    height: 20%;
+    padding: 10px;
+    background-color: #F4CE14;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lista-redes{
+    display: flex;
+
+}
+.img-redes {
+    list-style: none;
+}
+.img-redes a img{
+    width: 50px;
+    height: 59px;
+    border-radius: 20%;
+}
+/*ESTILOS PARA EL FORMULARION DE LA PAGINA CONTACTO*/
+.form-contacto {
+    background-color:#F5F7F8 ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 100%;
+    max-width: 400px;
+    margin: 30px;
+}
+#titulo-form {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    
+}
+.input-form, .mensaje{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F4CE14;
+    color: white ;
+}
+#btn-form {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    background-color: #45474B;
+    color: #ccc;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*ESTILOS PARA PAGINA QUIENES SOMOS*/
+.contenedor-quienes-somos{
+    padding: 10px;
+    margin: 40px; /* Centra el grid horizontalmente */
+    display: grid;
+    grid-template-areas: 
+        "img1 parrafo1"
+        "parrafo2 img2"
+        "img3 parrafo3";
+    grid-template-columns: 1fr 1fr; /* Mejor que 40% 40% para centrado */
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+    text-align: center;
+}
+.img1-qs{
+    grid-area: img1;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    border-radius: 5%;
+}
+.parrafo-1-qs{
+    grid-area: parrafo1;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.img2-qs{
+    grid-area: img2;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    gap: 10px;
+    border-radius: 5%;
+}
+.parrafo-2-qs{
+    grid-area: parrafo2;
+    font-size: 1.7rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+.img3-qs{
+    grid-area: img3;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    gap: 10px;
+    border-radius: 5%;
+}
+.parrafo-3-qs{
+    grid-area: parrafo3;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*ESTILOS PARA LA PAGINA DE PRODUCTOS*/
+.fila-1{
+    margin: 10px;
+}
+.productos{
+    margin: 10px;
+}
+.productos img{
+    height: 250px;
+}
+.carta-productos{
+    background-color: #555;
+    color:#F5F7F8  ;
+}
+.boton-comprar{
+    background-color: #BFBBA9;
+}
+.boton-comprar:hover{
+    background-color: #F4CE14;
+}
+/*MODELO RESPONSIVE PARA TELEFONOS*/
+@media (max-width: 480px){
+    /*HEADER*/
+    header{
+        flex-direction: column;
+        height: 20%;
+    }
+    #img-logo{
+        width: 70px;
+        height:70px;
+    }
+    #lista-busqueda{
+        justify-content: space-around;
+    }
+    /*MAIN PARA TELEFONOS*/
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .contenedor-main{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        place-items: center; 
+        text-align: center;
+    }
+    .titulo-p{
+        grid-area: titulo;
+    }
+    
+    .div-imagen1, .div-imagen2, #div-ubicacion {
+        width: 95%;
+        max-width: 400px; /* Evita que sean demasiado anchos */
+        height: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .div-imagen3{
+        display: none;
+    }
+
+    .seccion-img1, .seccion-img2 {
+        flex-direction: column;
+        height: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+
+    /*FOOTER PARA TELEFONOS*/
+    footer{
+        flex-direction: column;
+        height: 20%;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    #div-redes{
+        width: 100%;
+    }
+    #div-redes h2{
+        text-align: center  ;
+    }
+    #lista-redes {
+        justify-content: space-between;
+    }
+
+    /*ESTILO PARA EL FORUMULARIO DE CONTACTO EN TELEFONOS*/
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+    /*ESTILOS PARA EL QUIENES SOMOS EN TELEFONO*/
+    .contenedor-quienes-somos{
+        grid-template-areas: 
+        "parrafo1"
+        "img1"
+        "parrafo2"
+        "img2"
+        "parrafo3";
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(5, 250px) ;
+        gap: 5px;
+        text-align: center;
+    }
+    .img3-qs{
+        display: none;
+    }
+    .parrafo-1-qs{
+        font-size: 1.2rem;
+    }
+    .parrafo-2-qs{
+        font-size: 1.3rem;
+    }
+    .parrafo-3-qs{
+        font-size: 1.3rem;
+    }
+
+}
