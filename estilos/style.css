@@ -68,7 +68,7 @@ main{
 }
 /*ESTILOS PARA EL INDEX */
 .fondo-titulo{
-    background-image: url(/herramientas/excavadoras-tractores.webp);
+    background-image: url(../herramientas/excavadoras-tractores.webp);
     background-size: cover;
     background-position: center;
     height: 350px;
@@ -158,10 +158,13 @@ footer{
 .img-redes {
     list-style: none;
 }
+.img-redes:hover{
+    border-radius: 15%;
+    background-color: yellow;
+}
 .img-redes a img{
     width: 50px;
     height: 59px;
-    border-radius: 20%;
 }
 /*ESTILOS PARA EL FORMULARION DE LA PAGINA CONTACTO*/
 .form-contacto {
