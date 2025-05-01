@@ -1,0 +1,37 @@
+//importacion para poder ocupar mis variables
+@use "../partials/variables" as *;
+/*ESTILOS DE PAGINA QUIENES SOMOS :) */
+.contenedor-quienes-somos{
+    padding: 10px;
+    margin: 40px; /* Centra el grid horizontalmente */
+    display: grid;
+    grid-template-areas: 
+        "img1 parrafo1"
+        "parrafo2 img2"
+        "img3 parrafo3";
+    grid-template-columns: 1fr 1fr; /* Mejor que 40% 40% para centrado */
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+    text-align: center;
+    .img1-qs{
+        grid-area: img1;
+        @include img-grid;
+    }
+    .parrafo-1-qs{
+        @include parrafo-grid(parrafo1,1.6rem,center,2px 2px 5px $negro);
+    }
+    .img2-qs{
+        grid-area: img2;
+        @include img-grid;
+    }
+    .parrafo-2-qs{
+        @include parrafo-grid(parrafo2,1.7rem,center,2px 2px 5px $negro);
+    }
+    .img3-qs{
+        grid-area: img3;
+        @include img-grid;
+    }
+    .parrafo-3-qs{
+        @include parrafo-grid(parrafo3,1.5rem,center,2px 2px 5px $negro);
+    }
+}

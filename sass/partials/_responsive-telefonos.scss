@@ -1,0 +1,100 @@
+
+/*MODELO RESPONSIVE PARA TELEFONOS :) */
+
+@media (max-width: 480px){
+    /*HEADER*/
+    header{
+        flex-direction: column;
+        height: 20%;
+    }
+    /*FOOTER PARA TELEFONOS*/
+    footer{
+        flex-direction: column;
+        height: 20%;
+        p{
+            font-size: 20px;
+        }
+        #div-redes{
+            width: 100%;
+            h2{
+                text-align: center  ;
+            }
+            #lista-redes {
+                justify-content: space-between;
+            }
+        }
+    }
+    /*MAIN PARA TELEFONOS*/
+    h1{
+        text-align: center;
+        font-size: 3rem;
+    }
+    /*ESTILOS INDEX*/
+    .subtitulo-index1, .subtitulo-index2{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .contenedor-servicios {
+        flex-direction: column;
+        align-items: center;
+        .div-servicios {
+            width: 90%;
+        }
+    }
+    .carrusel {
+        height: 300px;
+        width: 100%;
+    }
+
+    /*ESTILOS DEL FORMULARIO DE CONTACTOS*/
+    .form-contacto{
+        display: flex;
+        flex-direction: column;
+        margin: 50px;
+    }
+
+    /*ESTILOS PARA PAGINA QUIENES SOMOS*/
+    .contenedor-quienes-somos{
+        grid-template-areas: 
+        "parrafo1"
+        "img1"
+        "parrafo2"
+        "img2"
+        "parrafo3";
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(5, 250px) ;
+        gap: 5px;
+        text-align: center;
+        .img3-qs{
+            display: none;
+        }
+        .parrafo-1-qs{
+            font-size: 1.1rem;
+        }
+        .parrafo-2-qs{
+            font-size: 1.2rem;
+        }
+        .parrafo-3-qs{
+            font-size: 1.2rem;
+        }
+    }
+
+    /*ESTILOS PARA LA PAGINA DE SERVICIOS*/
+    #subtitulo-servicios{
+        justify-content: center;
+        font-size: 2rem ;
+    }
+    .seccion-servicios-1,.seccion-servicios-2{
+        flex-direction: column;
+        width: 100%;
+        .mi-servicio{
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+            h3{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

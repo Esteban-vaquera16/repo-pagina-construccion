@@ -1,0 +1,22 @@
+//importacion para poder ocupar mis variables
+@use "../partials/variables" as *;
+/*ESTILOS PARA LA PAGINA PRODUCTOSS :)*/
+.fila-1{
+    margin: 10px;
+    .productos{
+        margin: 10px;
+        img{
+            height: 250px;
+        }
+        .carta-productos{
+            background-color: #555;
+            color:$blanco  ;
+            .boton-comprar{
+                background-color: $gris-claro;
+            }
+            .boton-comprar:hover{
+                background-color: $amarillo;
+            }
+        }
+    }
+}

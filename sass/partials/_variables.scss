@@ -1,0 +1,21 @@
+//MIS VARIABLES DE COLORES :)
+$gris: #45474B ;
+$amarillo: #F4CE14 ;
+$blanco: #F5F7F8;
+$gris-claro :#BFBBA9;
+$negro: rgba(0, 0, 0, 0.5);
+
+//MIXIN CON PARAMETROS :)
+@mixin img-grid{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    display: block;
+    border-radius: 5%;
+}
+@mixin parrafo-grid($area,$tamano,$alineacion,$sombra){
+    grid-area: $area;
+    font-size: $tamano;
+    align-self: $alineacion;
+    text-shadow: $sombra;
+}

@@ -1,0 +1,14 @@
+//     ESTA ES MI PAGINA PRINCIPAL DE SCSS
+//EDSASAD
+//IMPORTACION DE PARTIALS QUE USARE
+@use "./partials/headerYFooter";
+@use "./partials/index";
+@use "./partials/formulario";
+@use "./partials/quienes-somos";
+@use "./partials/productos";
+@use "./partials/servicios";
+@use "./partials/responsive-telefonos";
+
+
+// IMPORTACION DE MI PARTIAL DE VARIABLES
+@use './partials/variables';

@@ -1,0 +1,37 @@
+//importacion para poder ocupar mis variables
+@use "../partials/variables" as *;
+/*ESTILOS PARA PAGINA DE NUESTROS SERVICIOS :) */
+#subtitulo-servicios{
+    color: $gris;
+    font-size: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 20px;
+}
+.seccion-servicios-1, .seccion-servicios-2{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    .mi-servicio{
+        width: 30%;
+        padding: 45px;
+        margin: 10px;
+        color: $negro;
+        transition: transform 0.3s ease;
+        h3{
+            font-size: 2rem;
+        }
+        img{
+            width: 100%;
+            height: 50%;
+        }
+    }
+    .mi-servicio:hover{
+        background-color: $amarillo;
+        color: $blanco;
+        border-radius: 5%;
+        transform: translateY(-10px);
+    }
+}

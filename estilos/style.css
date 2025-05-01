@@ -97,9 +97,6 @@ h1{
     font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.seccion-index{
-    width: 100%;
-}
 .subtitulo-index1{
     font-size: 3vw;
     color: white;
@@ -339,7 +336,7 @@ text-align: center;
 }
 
 /*SACAR EL HOVER QUE UTILIZAMOS EN ESCRITORIO PARA TELEFONOS*/
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) or (pointer: fine) {
     .div-servicios:hover,
     .mi-servicio:hover,
     .barra-busqueda a:hover,
@@ -348,7 +345,6 @@ text-align: center;
         background-color: #F4CE14;
         color: #F5F7F8;
         border-radius: 5%;
-        transform: translateY(-10px);
         opacity: 0.7; /* este es para los links, lo podés ajustar */
     }
 }
