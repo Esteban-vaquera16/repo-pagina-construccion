@@ -384,13 +384,13 @@ h1 {
     display: none;
   }
   .contenedor-quienes-somos .items-p1 .parrafo-1-qs {
-    font-size: 1rem;
+    font-size: 0.975rem;
   }
   .contenedor-quienes-somos .items-p2 .parrafo-2-qs {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
   .contenedor-quienes-somos .items-p3 .parrafo-3-qs {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   /*ESTILOS PARA LA PAGINA DE SERVICIOS*/
   #subtitulo-servicios {
