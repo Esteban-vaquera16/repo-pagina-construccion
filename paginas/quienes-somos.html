@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <!--<link rel="stylesheet" href="../estilos/style.css">-->
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
@@ -51,18 +55,31 @@
             <h1 class="titulo-p">ConstruMax</h1>
         </div>  
         <div class="contenedor-quienes-somos">
+          <div data-aos="zoom-in-down" class="items-img1">
             <img class="img1-qs" src="../herramientas/nuestros-trabajadores.webp" alt="trabajadores">
+          </div>
+          <div data-aos="zoom-in-down" class="items-p1">
             <p class="parrafo-1-qs">En ConstruMax, entendemos que cada proyecto de construcción es único, y por eso brindamos soluciones
-            personalizadas tanto en la ejecución de obras como en la provisión de insumos. Nos enfocamos en ofrecer un servicio integral,
-            que va desde la planificación hasta la entrega de los mejores materiales del mercado.</p>
-            <img class="img2-qs" src="../herramientas/casa-terminada.webp" alt="casa-terminada">
+              personalizadas tanto en la ejecución de obras como en la provisión de insumos. Nos enfocamos en ofrecer un servicio integral,
+              que va desde la planificación hasta la entrega de los mejores materiales del mercado.</p>
+          </div>
+          <div data-aos="zoom-in-down" class="items-p2">
             <p class="parrafo-2-qs">Nuestra misión es facilitar el proceso constructivo de nuestros clientes, garantizando eficiencia,
-            rapidez y confianza. Contamos con una red de proveedores de primer nivel y un equipo altamente calificado
-            que te asesorará para que obtengas los mejores resultados en tu obra.</p>
+              rapidez y confianza. Contamos con una red de proveedores de primer nivel y un equipo altamente calificado
+              que te asesorará para que obtengas los mejores resultados en tu obra.</p>
+          </div>
+          <div data-aos="zoom-in-down" class="items-img2">
+            <img class="img2-qs" src="../herramientas/casa-terminada.webp" alt="casa-terminada">
+          </div>
+          <div data-aos="zoom-in-down" class="items-img3">
             <img class="img3-qs" src="../herramientas/materiales-quienes somos.webp" alt="materiales">
+          </div>
+          <div data-aos="zoom-in-down" class="items-p3">
             <p class="parrafo-3-qs">Ya sea que necesites desarrollar un proyecto desde cero o simplemente adquirir materiales de construcción de alta calidad,
-            estamos aquí para ayudarte. Con un amplio catálogo de productos y un servicio de atención especializado,
-            nos aseguramos de que encuentres todo lo que necesitas en un solo lugar.</p>
+              estamos aquí para ayudarte. Con un amplio catálogo de productos y un servicio de atención especializado,
+              nos aseguramos de que encuentres todo lo que necesitas en un solo lugar.</p>
+          </div>
+
         </div>
 
     </main>
@@ -77,6 +94,10 @@
             </ul>
         </div>  
     </footer>
+    <!--Link de AOS -->
+    <script>
+      AOS.init();
+    </script>
 <!--Link de bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

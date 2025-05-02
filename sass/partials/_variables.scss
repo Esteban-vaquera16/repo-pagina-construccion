@@ -13,8 +13,7 @@ $negro: rgba(0, 0, 0, 0.5);
     display: block;
     border-radius: 5%;
 }
-@mixin parrafo-grid($area,$tamano,$alineacion,$sombra){
-    grid-area: $area;
+@mixin parrafo-grid($tamano,$alineacion,$sombra){
     font-size: $tamano;
     align-self: $alineacion;
     text-shadow: $sombra;

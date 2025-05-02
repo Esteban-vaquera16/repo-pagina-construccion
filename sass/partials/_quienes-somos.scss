@@ -13,25 +13,41 @@
     grid-template-rows: repeat(3, 300px);
     gap: 20px;
     text-align: center;
-    .img1-qs{
+    .items-img1{
         grid-area: img1;
-        @include img-grid;
+        .img1-qs{
+            @include img-grid;
+        }
     }
-    .parrafo-1-qs{
-        @include parrafo-grid(parrafo1,1.6rem,center,2px 2px 5px $negro);
+    .items-p1{
+        grid-area: parrafo1;
+        .parrafo-1-qs{
+            @include parrafo-grid(1.6rem,center,2px 2px 5px $negro);
+        }
     }
-    .img2-qs{
+    .items-img2{
         grid-area: img2;
-        @include img-grid;
+        .img2-qs{
+            @include img-grid;
+        }
     }
-    .parrafo-2-qs{
-        @include parrafo-grid(parrafo2,1.7rem,center,2px 2px 5px $negro);
+    .items-p2{
+        grid-area: parrafo2;
+        .parrafo-2-qs{
+            @include parrafo-grid(1.7rem,center,2px 2px 5px $negro);
+        }
     }
-    .img3-qs{
+    .items-img3{
         grid-area: img3;
-        @include img-grid;
+        .img3-qs{
+            @include img-grid;
+        }
     }
-    .parrafo-3-qs{
-        @include parrafo-grid(parrafo3,1.5rem,center,2px 2px 5px $negro);
+    .items-p3{
+        grid-area: parrafo3;
+        .parrafo-3-qs{
+            @include parrafo-grid(1.6rem,center,2px 2px 5px $negro);
+        }
     }
+    
 }

@@ -9,7 +9,8 @@
 /* BLANCO   #F5F7F8 */  
 
 body{
-    background-color: #BFBBA9;
+    background: #F4CE14;
+    background: linear-gradient(90deg, rgba(244, 206, 20, 1) 0%, rgba(191, 187, 169, 1) 53%, rgba(191, 187, 169, 1) 59%, rgba(244, 206, 20, 1) 100%);
     font-family:"Roboto", sans-serif ;
     display: flex;
     flex-direction: column;
