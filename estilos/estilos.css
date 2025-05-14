@@ -8,9 +8,6 @@
 body {
   background-color: #BFBBA9;
   font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   overflow-x: hidden;
 }
 
@@ -93,7 +90,7 @@ h1 {
 }
 
 /*ESTILOS DEL INDEX*/
-.subtitulo-index1, .subtitulo-index2 {
+.subtitulo-index1, .subtitulo-index3, .subtitulo-index2 {
   font-size: 3vw;
   color: #F5F7F8;
   width: 100%;
@@ -133,16 +130,27 @@ h1 {
   justify-content: center;
 }
 
-.carrusel {
+.carrusel-img {
   width: 800px;
   height: 400px;
   margin: 10px;
   overflow: hidden;
 }
-.carrusel img {
+.carrusel-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.subtitulo-index3 {
+  justify-content: center;
+}
+
+.ubicacion-empresa {
+  margin: 20px;
+  width: 45%;
+  height: 50vh;
+  border-radius: 5%;
 }
 
 /*ESTILOS PARA EL FORMULARIO DE LA PAGINA CONTACTO :)*/
@@ -290,30 +298,34 @@ h1 {
   padding: 20px;
 }
 
-.seccion-servicios-1, .seccion-servicios-2 {
+.seccion-servicios-1 {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   padding: 10px;
   margin: 10px;
-  text-align: center;
 }
-.seccion-servicios-1 .mi-servicio, .seccion-servicios-2 .mi-servicio {
+.seccion-servicios-1 .mi-servicio1, .seccion-servicios-1 .mi-servicio2, .seccion-servicios-1 .mi-servicio3, .seccion-servicios-1 .mi-servicio4, .seccion-servicios-1 .mi-servicio5, .seccion-servicios-1 .mi-servicio6 {
   width: 30%;
+  height: 75vh;
   padding: 45px;
   margin: 10px;
   color: rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
-.seccion-servicios-1 .mi-servicio h3, .seccion-servicios-2 .mi-servicio h3 {
+.seccion-servicios-1 .mi-servicio1 h3, .seccion-servicios-1 .mi-servicio2 h3, .seccion-servicios-1 .mi-servicio3 h3, .seccion-servicios-1 .mi-servicio4 h3, .seccion-servicios-1 .mi-servicio5 h3, .seccion-servicios-1 .mi-servicio6 h3 {
   font-size: 2rem;
 }
-.seccion-servicios-1 .mi-servicio img, .seccion-servicios-2 .mi-servicio img {
+.seccion-servicios-1 .mi-servicio1 img, .seccion-servicios-1 .mi-servicio2 img, .seccion-servicios-1 .mi-servicio3 img, .seccion-servicios-1 .mi-servicio4 img, .seccion-servicios-1 .mi-servicio5 img, .seccion-servicios-1 .mi-servicio6 img {
   width: 100%;
-  height: 50%;
+  height: 55%;
 }
-.seccion-servicios-1 .mi-servicio p, .seccion-servicios-2 .mi-servicio p {
+.seccion-servicios-1 .mi-servicio1 p, .seccion-servicios-1 .mi-servicio2 p, .seccion-servicios-1 .mi-servicio3 p, .seccion-servicios-1 .mi-servicio4 p, .seccion-servicios-1 .mi-servicio5 p, .seccion-servicios-1 .mi-servicio6 p {
   font-size: 1.3rem;
 }
-.seccion-servicios-1 .mi-servicio:hover, .seccion-servicios-2 .mi-servicio:hover {
+.seccion-servicios-1 .mi-servicio1:hover, .seccion-servicios-1 .mi-servicio2:hover, .seccion-servicios-1 .mi-servicio3:hover, .seccion-servicios-1 .mi-servicio4:hover, .seccion-servicios-1 .mi-servicio5:hover, .seccion-servicios-1 .mi-servicio6:hover {
   background-color: #F4CE14;
   color: #F5F7F8;
   border-radius: 5%;
@@ -321,7 +333,7 @@ h1 {
 }
 
 /*MODELO RESPONSIVE PARA TELEFONOS :) */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   /*HEADER*/
   header {
     flex-direction: column;
@@ -350,10 +362,10 @@ h1 {
     font-size: 3rem;
   }
   /*ESTILOS INDEX*/
-  .subtitulo-index1, .subtitulo-index2 {
+  .subtitulo-index1, .subtitulo-index2, .subtitulo-index3 {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 2.5rem;
   }
   .contenedor-servicios {
     flex-direction: column;
@@ -362,9 +374,13 @@ h1 {
   .contenedor-servicios .div-servicios {
     width: 90%;
   }
-  .carrusel {
-    height: 300px;
+  .carrusel-img {
+    height: 400px;
     width: 100%;
+  }
+  .ubicacion-empresa {
+    width: 90%;
+    height: 30vh;
   }
   /*ESTILOS DEL FORMULARIO DE CONTACTOS*/
   .form-contacto {
@@ -397,17 +413,150 @@ h1 {
     justify-content: center;
     font-size: 2rem;
   }
-  .seccion-servicios-1, .seccion-servicios-2 {
+  .seccion-servicios-1 {
     flex-direction: column;
     width: 100%;
   }
-  .seccion-servicios-1 .mi-servicio, .seccion-servicios-2 .mi-servicio {
+  .seccion-servicios-1 .mi-servicio1, .seccion-servicios-1 .mi-servicio2, .seccion-servicios-1 .mi-servicio3, .seccion-servicios-1 .mi-servicio4, .seccion-servicios-1 .mi-servicio5, .seccion-servicios-1 .mi-servicio6 {
     width: 100%;
     margin: 10px;
     text-align: center;
   }
-  .seccion-servicios-1 .mi-servicio h3, .seccion-servicios-2 .mi-servicio h3 {
+  .seccion-servicios-1 .mi-servicio1 h3, .seccion-servicios-1 .mi-servicio2 h3, .seccion-servicios-1 .mi-servicio3 h3, .seccion-servicios-1 .mi-servicio4 h3, .seccion-servicios-1 .mi-servicio5 h3, .seccion-servicios-1 .mi-servicio6 h3 {
     font-size: 1.5rem;
+  }
+}
+/*MODELO RESOONSIVE PARA TABLETS :)*/
+@media (min-width: 501px) and (max-width: 1024px) {
+  /*ESTILOS PARA EL FOOTER*/
+  footer {
+    flex-direction: column;
+    height: 20%;
+  }
+  footer p {
+    font-size: 20px;
+  }
+  footer #div-redes {
+    width: 100%;
+  }
+  footer #div-redes h2 {
+    text-align: center;
+  }
+  footer #div-redes #lista-redes {
+    justify-content: space-evenly;
+    margin: 5px;
+  }
+  footer #div-redes .img-redes a img {
+    width: 70px;
+    height: 79px;
+  }
+  /*ESTILOS DEL INDEX EN TABLET*/
+  .subtitulo-index1, .subtitulo-index2, .subtitulo-index3 {
+    justify-content: center;
+    font-size: 2.4rem;
+  }
+  .contenedor-servicios .div-servicios {
+    height: 45vh;
+  }
+  .contenedor-servicios .div-servicios img {
+    height: 70%;
+  }
+  .carrusel-img {
+    width: 80%;
+    height: 40vh;
+  }
+  .carrusel-img img {
+    width: 100%;
+    height: auto;
+  }
+  .ubicacion-empresa {
+    width: 70%;
+    height: 25vh;
+  }
+  /*ESTILOS PARA LA PAGINA DE SERVICIOS*/
+  #subtitulo-servicios {
+    justify-content: center;
+    font-size: 5vw;
+    padding: 10px;
+  }
+  .seccion-servicios-1 {
+    display: grid;
+    grid-template-areas: "servicio1 servicio2" "servicio3 servicio4" "servicio5 servicio6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 460px);
+    gap: 10px;
+    text-align: center;
+  }
+  .seccion-servicios-1 img {
+    width: 100%;
+    height: 55%;
+  }
+  .seccion-servicios-1 h3 {
+    font-size: 2rem;
+  }
+  .seccion-servicios-1 .mi-servicio1 {
+    grid-area: servicio1;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio1 p {
+    font-size: 1.2rem;
+  }
+  .seccion-servicios-1 .mi-servicio2 {
+    grid-area: servicio2;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio2 p {
+    font-size: 1.2rem;
+  }
+  .seccion-servicios-1 .mi-servicio3 {
+    grid-area: servicio3;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio3 p {
+    font-size: 1.2rem;
+  }
+  .seccion-servicios-1 .mi-servicio4 {
+    grid-area: servicio4;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio4 p {
+    font-size: 1.2rem;
+  }
+  .seccion-servicios-1 .mi-servicio5 {
+    grid-area: servicio5;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio5 p {
+    font-size: 1.2rem;
+  }
+  .seccion-servicios-1 .mi-servicio6 {
+    grid-area: servicio6;
+    width: 100%;
+    height: 460px;
+  }
+  .seccion-servicios-1 .mi-servicio6 p {
+    font-size: 1.2rem;
+  }
+  /*ESTILOS PARA LA PAGINA QUIENES SOMOS :)*/
+  .contenedor-quienes-somos .items-p1 .parrafo-1-qs {
+    font-size: 1.4rem;
+    align-self: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .contenedor-quienes-somos .items-p2 .parrafo-2-qs {
+    font-size: 1.5rem;
+    align-self: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .contenedor-quienes-somos .items-p3 .parrafo-3-qs {
+    font-size: 1.5rem;
+    align-self: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
 }
 

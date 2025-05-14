@@ -1,0 +1,148 @@
+//importacion para poder ocupar mis variables
+@use "../partials/variables" as *;
+/*MODELO RESOONSIVE PARA TABLETS :)*/
+
+@media (min-width: 501px) and (max-width: 1024px){
+/*ESTILOS PARA EL FOOTER*/
+footer{
+        flex-direction: column;
+        height: 20%;
+        p{
+            font-size: 20px;
+        }
+        #div-redes{
+            width: 100%;
+            h2{
+                text-align: center  ;
+            }
+            #lista-redes {
+                justify-content: space-evenly;
+                margin: 5px;
+            }
+            .img-redes{
+                a img{
+                    width: 70px;
+                    height: 79px;
+                }
+            }
+        }
+    }
+/*ESTILOS DEL INDEX EN TABLET*/
+    .subtitulo-index1, .subtitulo-index2, .subtitulo-index3{
+        justify-content: center;
+        font-size: 2.4rem;
+    }
+    .contenedor-servicios{
+        .div-servicios{
+            height: 45vh;
+            img{
+                height: 70%;
+            }
+        }
+    }
+    .carrusel-img{
+        width: 80%;
+        height: 40vh;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .ubicacion-empresa{
+        width: 70%;
+        height: 25vh;
+    }
+/*ESTILOS PARA LA PAGINA DE SERVICIOS*/
+#subtitulo-servicios{
+    justify-content: center;
+    font-size: 5vw;
+    padding: 10px;
+}
+.seccion-servicios-1{
+    display: grid;
+    grid-template-areas: 
+        "servicio1 servicio2"
+        "servicio3 servicio4"
+        "servicio5 servicio6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 460px);
+    gap: 10px;
+    text-align: center;
+    img{
+        width: 100%;
+        height: 55%;
+        }
+    h3{
+        font-size: 2rem;
+    }
+    .mi-servicio1{
+        grid-area:servicio1 ;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+    .mi-servicio2{
+        grid-area:servicio2 ;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+    .mi-servicio3{
+        grid-area: servicio3;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+    .mi-servicio4{
+        grid-area: servicio4;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+    .mi-servicio5{
+        grid-area: servicio5 ;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+    .mi-servicio6{
+        grid-area: servicio6;
+        width: 100%;
+        height: 460px;
+        p{
+        font-size: 1.2rem;
+    }
+    }
+
+}
+
+/*ESTILOS PARA LA PAGINA QUIENES SOMOS :)*/
+.contenedor-quienes-somos{
+    .items-p1{
+        .parrafo-1-qs{
+            @include parrafo-grid(1.4rem,center,2px 2px 5px $negro);
+        }
+    }
+    .items-p2{
+        .parrafo-2-qs{
+            @include parrafo-grid(1.5rem,center,2px 2px 5px $negro);
+        }
+    }
+    .items-p3{
+        .parrafo-3-qs{
+            @include parrafo-grid(1.5rem,center,2px 2px 5px $negro);
+        }
+    }
+}
+
+}

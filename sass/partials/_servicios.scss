@@ -9,13 +9,17 @@
     width: 100%;
     padding: 20px;
 }
-.seccion-servicios-1, .seccion-servicios-2{
+.seccion-servicios-1{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
     margin: 10px;
-    text-align: center;
-    .mi-servicio{
+    .mi-servicio1, .mi-servicio2,.mi-servicio3,.mi-servicio4,.mi-servicio5,.mi-servicio6{
         width: 30%;
+        height: 75vh;
         padding: 45px;
         margin: 10px;
         color: $negro;
@@ -25,13 +29,13 @@
         }
         img{
             width: 100%;
-            height: 50%;
+            height: 55%;
         }
         p{
             font-size: 1.3rem;
         }
     }
-    .mi-servicio:hover{
+    .mi-servicio1:hover,.mi-servicio2:hover,.mi-servicio3:hover,.mi-servicio4:hover,.mi-servicio5:hover,.mi-servicio6:hover{
         background-color: $amarillo;
         color: $blanco;
         border-radius: 5%;

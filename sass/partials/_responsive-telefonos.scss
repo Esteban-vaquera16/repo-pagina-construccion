@@ -1,7 +1,7 @@
 
 /*MODELO RESPONSIVE PARA TELEFONOS :) */
 
-@media (max-width: 480px){
+@media (max-width: 500px){
     /*HEADER*/
     header{
         flex-direction: column;
@@ -30,10 +30,10 @@
         font-size: 3rem;
     }
     /*ESTILOS INDEX*/
-    .subtitulo-index1, .subtitulo-index2{
+    .subtitulo-index1, .subtitulo-index2, .subtitulo-index3{
         display: flex;
         justify-content: center;
-        font-size: 30px;
+        font-size: 2.5rem;
     }
     .contenedor-servicios {
         flex-direction: column;
@@ -42,11 +42,14 @@
             width: 90%;
         }
     }
-    .carrusel {
-        height: 300px;
+    .carrusel-img{
+        height: 400px;
         width: 100%;
     }
-
+    .ubicacion-empresa{
+        width: 90%;
+        height: 30vh;
+    }
     /*ESTILOS DEL FORMULARIO DE CONTACTOS*/
     .form-contacto{
         display: flex;
@@ -93,10 +96,10 @@
         justify-content: center;
         font-size: 2rem ;
     }
-    .seccion-servicios-1,.seccion-servicios-2{
+    .seccion-servicios-1{
         flex-direction: column;
         width: 100%;
-        .mi-servicio{
+        .mi-servicio1,.mi-servicio2,.mi-servicio3,.mi-servicio4,.mi-servicio5,.mi-servicio6{
             width: 100%;
             margin: 10px;
             text-align: center;

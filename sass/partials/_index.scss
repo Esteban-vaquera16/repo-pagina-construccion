@@ -67,7 +67,7 @@ h1{
     @extend .subtitulo-index1;
     justify-content: center;
 }
-.carrusel {
+.carrusel-img {
     width: 800px;
     height: 400px;
     margin: 10px;
@@ -77,4 +77,15 @@ h1{
         height: 100%;
         object-fit: cover;
     }
+}
+.subtitulo-index3{
+    @extend .subtitulo-index1;
+    justify-content: center;
+}
+.ubicacion-empresa{
+    margin: 20px;
+    width: 45%;
+    height: 50vh;
+    border-radius: 5%;
+
 }
