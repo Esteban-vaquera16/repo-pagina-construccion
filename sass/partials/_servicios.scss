@@ -32,7 +32,16 @@
             height: 55%;
         }
         p{
-            font-size: 1.2rem;
+            font-size: 1.05rem;
+        }
+    }
+    .mi-servicio6{
+        @extend .mi-servicio1;
+        h3{
+            font-size: 1.6rem;
+        }
+        p{
+            font-size: 1.15rem;
         }
     }
     .mi-servicio1:hover,.mi-servicio2:hover,.mi-servicio3:hover,.mi-servicio4:hover,.mi-servicio5:hover,.mi-servicio6:hover{
