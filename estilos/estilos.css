@@ -323,7 +323,7 @@ h1 {
   height: 55%;
 }
 .seccion-servicios-1 .mi-servicio1 p, .seccion-servicios-1 .mi-servicio2 p, .seccion-servicios-1 .mi-servicio3 p, .seccion-servicios-1 .mi-servicio4 p, .seccion-servicios-1 .mi-servicio5 p, .seccion-servicios-1 .mi-servicio6 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .seccion-servicios-1 .mi-servicio1:hover, .seccion-servicios-1 .mi-servicio2:hover, .seccion-servicios-1 .mi-servicio3:hover, .seccion-servicios-1 .mi-servicio4:hover, .seccion-servicios-1 .mi-servicio5:hover, .seccion-servicios-1 .mi-servicio6:hover {
   background-color: #F4CE14;
